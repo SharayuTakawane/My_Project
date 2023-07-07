@@ -1,0 +1,28 @@
+word_dict = {}
+
+def add_word(word, definition):
+    word_dict[word] = definition
+    print(f"Added '{word}' to the dictionary.")
+
+def search_word(word):
+    if word in word_dict:
+        print(f"Definition of '{word}': {word_dict[word]}")
+    else:
+        print(f"'{word}' not found in the dictionary.")
+
+def remove_word(word):
+    if word in word_dict:
+        del word_dict[word]
+        print(f"Removed '{word}' from the dictionary.")
+    else:
+        print(f"'{word}' not found in the dictionary.")
+
+# Example usage
+add_word("apple", "A fruit that is typically red or green.")
+add_word("banana", "A long curved fruit with a yellow skin.")
+add_word(" Earth", It is a planet in solar system. ") 
+add_ word(" Foal", A unicorn small baby called Foal. "
+add_word("Mango", A king of fruits. ") 
+search_word("apple")
+remove_word("banana")
+search_word("banana")
